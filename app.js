@@ -74,7 +74,7 @@ function displayDAYS(){
 
 function sickLoad(){
     
-    setTimeout(sick, 300);
+    setTimeout(sick, 500);
     document.getElementById("main3").style.display = "none";
 }
 
@@ -93,7 +93,7 @@ function sick(){
 
 function daysLoad(){
     
-    setTimeout(days, 300);
+    setTimeout(days, 500);
     document.getElementById("main2").style.display = "none";
 }
 
@@ -113,7 +113,7 @@ function days(){
 
 function TLBLoad(){
     
-    setTimeout(TLB, 300);
+    setTimeout(TLB, 500);
     document.getElementById("main1").style.display = "none";
 }
 
