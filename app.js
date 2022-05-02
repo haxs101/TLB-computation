@@ -24,6 +24,24 @@ function computeDays(){
     document.getElementById("total1").innerHTML = "No. of days to be monetized: " + totalDays;
 }
 
+function computeLeave(){
+//Computation here
+  var vacation = document.getElementById("vacation").value; 
+  var sick = document.getElementById("sick").value; 
+    var earned = 1.25;
+    
+    var vacationBal = vacation+earned;
+    var sickBal = sick+earned;
+    var totalLeave = vacationBal+sickBal;
+    
+    document.getElementById("totalLeaveCredits").innerHTML = "Total Balance: " + totalLeave ;
+    document.getElementById("totalLeaveCredits1").innerHTML = "Sick Balance: " + sickBal ;
+    document.getElementById("totalLeaveCredits2").innerHTML = "Vacation Balance: " + vacationBal ;
+    
+
+}
+
+
 function reset(){
     document.getElementById('days').value = "";
     document.getElementById('sweldo').value = "";
@@ -37,10 +55,19 @@ function reset2(){
 
     
 }
+
+function reset3(){
+    document.getElementById('vacation').value = "";
+    document.getElementById('sick').value = "";
+
+    
+}
+
 function displayDAYS(){
     document.getElementById('TLB').style.display = "none";
     document.getElementById('DAYS').style.display = "block";
     document.getElementById('main').style.display = "none";
+    document.getElementById('leave').style.display = "none";
 }
 
 function main(){
@@ -54,3 +81,12 @@ function displayTLB(){
     document.getElementById('DAYS').style.display = "none";
     document.getElementById('main').style.display = "none";
 }
+
+function displayLeave(){
+    document.getElementById('TLB').style.display = "none";
+    document.getElementById('DAYS').style.display = "none";
+    document.getElementById('main').style.display = "none";
+    document.getElementById('leave').style.display = "block";
+}
+
+
