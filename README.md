@@ -8,7 +8,7 @@ TLB = S * D * CF\
 where:\
 S = Highest monthly salary recorded\
 D = No. of accumulated vacation and sick leave credits\
-CF = Constant Factor which is 0.0481927\
+CF = Constant Factor which is 0.0481927
 
 # Leave and Sick credits earned monthly computation
 Vacation and sick leave credits earned on monthly basis, more info http://www.csc.gov.ph/phocadownload//MC1999/mc14s1999.pdf\
@@ -18,12 +18,12 @@ Every month added by 1.25 on sick and vacation leave credits\
 
 VLB = 1.25 + current leave balance\
 SLB = 1.25 + current sick balance\
-TLB = VLB + SLB\
+TLB = VLB + SLB
 
 where:\
 VLB = vacation leave balance\
 SLB = sick leave balance\
-TLB = total leave balance\
+TLB = total leave balance
 
 **Live demo:**\
 https://haxs101.github.io/TLB-computation/
