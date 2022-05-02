@@ -64,6 +64,33 @@
 
               
             </div>
+            
+            <div id="leave" style="display: none;">
+              
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Vacation Balance</span>
+                  </div>
+                  <input type="number"  id="vacation" class="form-control" placeholder="Vacation Balance" aria-label="Username" aria-describedby="basic-addon1" required>
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Sick Balance</span>
+                  </div>
+                  <input type="number" id="sick" class="form-control"  placeholder="Sick Balance" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <button class="btn btn-primary" onclick="computeLeave()">Compute</button>
+                <button class="btn btn-danger" onclick="reset3()">Reset</button> <br>
+               <h1 id="totalLeaveCredits2"></h1>
+               <h1 id="totalLeaveCredits1"></h1>
+              
+               <h1 id="totalLeaveCredits"></h1>
+          
+
+             
+            </div>
 
 
             <div id="DAYS" style="display: none;">
@@ -105,32 +132,7 @@
       </div>
     
     
-      <div id="leave" style="display: none;">
-              
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Vacation Balance</span>
-                  </div>
-                  <input type="number"  id="vacation" class="form-control" placeholder="Vaction Balance" aria-label="Username" aria-describedby="basic-addon1" required>
-                </div>
-
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Sick Balance</span>
-                  </div>
-                  <input type="number" id="sick" class="form-control"  placeholder="Sick Balance" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-
-                <button class="btn btn-primary" onclick="computeLeave()">Compute</button>
-                <button class="btn btn-danger" onclick="reset3()">Reset</button> <br>
-               <h1 id="totalLeaveCredits2"></h1>
-               <h1 id="totalLeaveCredits1"></h1>
-              
-               <h1 id="totalLeaveCredits"></h1>
-          
-
-             
-           </div>
+     
 
 
       <div class="card text-center">
