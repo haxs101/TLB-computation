@@ -81,6 +81,7 @@ function displayTLB(){
     document.getElementById('TLB').style.display = "block";
     document.getElementById('DAYS').style.display = "none";
     document.getElementById('main').style.display = "none";
+    document.getElementById('leave').style.display = "none";
 }
 
 function displayLeave(){
