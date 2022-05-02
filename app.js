@@ -30,9 +30,9 @@ function computeLeave(){
   var sick = document.getElementById("sick").value; 
     var earned = 1.25;
     
-    var vacationBal = parseFloat(vacation+earned);
-    var sickBal = parseFloat(sick+earned);
-    var totalLeave = parseFloat(vacationBal+sickBal);
+    var vacationBal = parseFloat(vacation)+parseFloat(earned);
+    var sickBal = parseFloat(sick)+parseFloat(earned);
+    var totalLeave = parseFloat(vacationBal)+parseFloat(sickBal);
     
     document.getElementById("totalLeaveCredits").innerHTML = "Total Balance: " + totalLeave ;
     document.getElementById("totalLeaveCredits1").innerHTML = "Sick Balance: " + sickBal ;
