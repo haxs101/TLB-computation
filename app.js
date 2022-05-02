@@ -74,6 +74,7 @@ function main(){
     document.getElementById('TLB').style.display = "none";
     document.getElementById('DAYS').style.display = "none";
     document.getElementById('main').style.display = "block";
+    document.getElementById('leave').style.display = "none";
 }
 
 function displayTLB(){
