@@ -11,7 +11,7 @@ D = No. of accumulated vacation and sick leave credits\
 CF = Constant Factor which is 0.0481927
 
 # Leave and Sick credits earned monthly computation
-Vacation and sick leave credits earned on monthly basis, more info http://www.csc.gov.ph/phocadownload//MC1999/mc14s1999.pdf\
+Vacation and sick leave credits earned on monthly basis, more info http://www.csc.gov.ph/phocadownload//MC1999/mc14s1999.pdf
 
 **Computation:**\
 Every month added by 1.25 on sick and vacation leave credits\
