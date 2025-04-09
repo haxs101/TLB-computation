@@ -9,7 +9,7 @@ function compute(){
 
     console.log(displayTotal);
 
-    document.getElementById("total").innerHTML = "Total Leave Benefits: ₱" + displayTotal;
+    document.getElementById("total").innerHTML = "Total Leave Benefits: ₱" + "<p style="red">displayTotal</p>;
 }
 
 
