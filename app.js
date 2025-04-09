@@ -9,7 +9,7 @@ function compute(){
 
     console.log(displayTotal);
 
-    document.getElementById("total").innerHTML = "Total Leave Benefits: ₱" + "<p style="red">displayTotal</p>;
+    document.getElementById("total").innerHTML = "Total Leave Benefits: " + '<p style=color:#ff3d6e;>₱' + displayTotal + '</p>';
 }
 
 
@@ -21,7 +21,7 @@ function computeDays(){
 
     console.log(totalDays);
 
-    document.getElementById("total1").innerHTML = "No. of days to be monetized: " + totalDays;
+    document.getElementById("total1").innerHTML = "No. of days to be monetized: " + '<p style=color:#ff3d6e;>' + totalDays+ '</p>';
 }
 
 function computeLeave(){
@@ -34,9 +34,9 @@ function computeLeave(){
     var sickBal = parseFloat(sick)+parseFloat(earned);
     var totalLeave = parseFloat(vacationBal)+parseFloat(sickBal);
 
-    document.getElementById("totalLeaveCredits").innerHTML = "Total Balance: " + totalLeave ;
-    document.getElementById("totalLeaveCredits1").innerHTML = "Sick Balance: " + sickBal ;
-    document.getElementById("totalLeaveCredits2").innerHTML = "Vacation Balance: " + vacationBal ;
+    document.getElementById("totalLeaveCredits").innerHTML = "Total Balance: " + '<p style=color:#ff3d6e;>' +totalLeave + '</p>' ;
+    document.getElementById("totalLeaveCredits1").innerHTML = "Sick Balance: " + '<p style=color:#ff3d6e;>'+sickBal + '</p>';
+    document.getElementById("totalLeaveCredits2").innerHTML = "Vacation Balance: " + '<p style=color:#ff3d6e;>'+vacationBal + '</p>';
 
 
 }
@@ -74,7 +74,7 @@ function displayDAYS(){
 
 function sickLoad(){
     
-    setTimeout(sick, 500);
+    setTimeout(sick, 200);
     document.getElementById("main3").style.display = "none";
 }
 
@@ -93,7 +93,7 @@ function sick(){
 
 function daysLoad(){
     
-    setTimeout(days, 500);
+    setTimeout(days, 200);
     document.getElementById("main2").style.display = "none";
 }
 
@@ -113,7 +113,7 @@ function days(){
 
 function TLBLoad(){
     
-    setTimeout(TLB, 500);
+    setTimeout(TLB, 200);
     document.getElementById("main1").style.display = "none";
 }
 
@@ -129,7 +129,7 @@ function TLB(){
 
 //main loading
 function main(){
-    setTimeout(showPage, 800);
+    setTimeout(showPage, 200);
 
 }
 function showPage(){
