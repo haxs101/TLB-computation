@@ -2,14 +2,14 @@ function compute(){
     var days = document.getElementById('days').value;
     var sweldo = document.getElementById('sweldo').value;
     var cf = 0.0481927;
-    var totalToBeMonetized = days*sweldo*cf;
+    var totalToBeMonetized = days * sweldo * cf;
 
-    console.log(totalToBeMonetized.toLocaleString('en-US'));
+    var formattedTotal = parseFloat(totalToBeMonetized).toFixed(2); // Ensures 2 decimal digits
+    var displayTotal = Number(formattedTotal).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-    document.getElementById("total").innerHTML = "Total Leave Benefits: " + "₱"+totalToBeMonetized.toLocaleString('en-US');
+    console.log(displayTotal);
 
-
-
+    document.getElementById("total").innerHTML = "Total Leave Benefits: ₱" + displayTotal;
 }
 
 
