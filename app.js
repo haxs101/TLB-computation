@@ -20,7 +20,7 @@ function computeDays(){
     var totalDays = tlb/(sweldo1*cf);
 
 
-    totalDays = parseFloat(totalDays).toFixed(2); // round to 2 decimal places
+    totalDays = parseFloat(totalDays).toFixed(3); // round to 2 decimal places
     console.log(totalDays);
 
     document.getElementById("total1").innerHTML = "No. of days to be monetized: " + '<p style=color:#ff3d6e;>' + totalDays+ '</p>';
